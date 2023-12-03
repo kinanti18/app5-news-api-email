@@ -28,7 +28,7 @@ for article in content["articles"][:20]:
 try:
     for article in content.get("articles", [])[:20]:
         if article.get("title") is not None:
-            body = "subject: Today's news" \
+            body = "Subject: Today's news" \
                     +"\n" + body + article["title"] + "\n" \
                     + article.get("description", "") \
                     + "\n" + article.get("url", "") + 2 * "\n"
